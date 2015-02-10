@@ -1,4 +1,7 @@
-deploy:
+box: wercker/ruby
+build:
+    steps:
+deplo7y:
     steps:
         - mrono/elastic-beanstalk-deploy:
             key: $AMAZON_KEY
