@@ -2,8 +2,8 @@ box: wercker/default
 deploy:
     steps:
         - mrono/elastic-beanstalk-deploy:
-            key: $AMAZON_KEY
-            secret: $AMAZON_SECRET_KEY
-            app_name: My Application
-            env_name: production
+            key: $AWS_ACCESS_KEY
+            secret: $AWS_SECRET
+            app_name: My First Elastic Beanstalk Application
+            env_name: Default-Environment
             region: us-west-2
